@@ -2,8 +2,24 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.nk</groupId>
-	<artifactId>nk-model</artifactId>
-	<version>1.33.5-SNAPSHOT</version>
+	<artifactId>nk-ext-model</artifactId>
+	<packaging>jar</packaging>
+	<name>nk-ext-model</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>Data classes used in NK Api.</description>
+	<url>https://github.com/karpaczio/nk-ext-model</url>
+	<licenses>
+		<license>
+			<name>GNU General Public License v3.0</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<scm>
+		<url>https://github.com/karpaczio/nk-ext-model</url>
+		<connection>scm:git:git://github.com/karpaczio/nk-ext-model.git</connection>
+		<developerConnection>scm:git:git://github.com/karpaczio/nk-ext-model.git</developerConnection>
+	</scm>
 	<developers>
 		<developer>
 			<id>luruski</id>
@@ -17,18 +33,33 @@
 			</roles>
 			<timezone>+1</timezone>
 		</developer>
+		<developer>
+			<id>jbialek</id>
+			<name>Jakub Białek</name>
+			<email>jakub.bialek@nasza-klasa.pl</email>
+			<organization>Nasza Klasa sp. z o.o.</organization>
+			<organizationUrl>http://nk.pl</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
 	</developers>
-	<scm>
-		<connection>scm:svn:http://svn.nknet/svnrepo/java/nk-model/trunk</connection>
-		<developerConnection>scm:svn:http://svn.nknet/svnrepo/java/nk-model/trunk</developerConnection>
-		<url>http://svn.nknet/svnrepo/java/nk-3pp/trunk</url>
-	</scm>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<org.apache.maven.plugins.maven-compiler-plugin.version>2.3.2</org.apache.maven.plugins.maven-compiler-plugin.version>
+
+		<org.apache.shindig.shindig-social-api.version>2.0.2</org.apache.shindig.shindig-social-api.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.shindig</groupId>
 			<artifactId>shindig-social-api</artifactId>
-			<version>${shindig.version}</version>
-			
+			<version>${org.apache.shindig.shindig-social-api.version}</version>
+
 			<exclusions>
 				<exclusion>
 					<groupId>org.apache.tomcat</groupId>
@@ -113,4 +144,19 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${org.apache.maven.plugins.maven-compiler-plugin.version}</version>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 </project>
