@@ -9,7 +9,7 @@
 	<artifactId>nk-ext-model</artifactId>
 	<packaging>jar</packaging>
 	<name>nk-ext-model</name>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<description>Data classes used in NK Api.</description>
 	<url>https://github.com/karpaczio/nk-ext-model</url>
 	<licenses>
