@@ -4,7 +4,7 @@
 	<artifactId>nk-ext-model</artifactId>
 	<packaging>jar</packaging>
 	<name>nk-ext-model</name>
-	<version>1.0.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<description>Data classes used in NK Api.</description>
 	<url>https://github.com/karpaczio/nk-ext-model</url>
 	<licenses>
@@ -15,9 +15,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/karpaczio/nk-ext-model</url>
-		<connection>scm:git:git://github.com/karpaczio/nk-ext-model.git</connection>
-		<developerConnection>scm:git:git://github.com/karpaczio/nk-ext-model.git</developerConnection>
+		<connection>scm:git:git@github.com:karpaczio/nk-ext-model.git</connection>
+		<developerConnection>scm:git:git@github.com:karpaczio/nk-ext-model.git</developerConnection>
+		<url>git@github.com:karpaczio/nk-ext-model</url>
 	</scm>
 	<developers>
 		<developer>
